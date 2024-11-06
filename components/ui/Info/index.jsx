@@ -10,7 +10,7 @@ const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 
 const Info = () => {
   return (
-    <div className={`${quick.className} tracking-wider max-w-2xl mx-auto p-6 bg-white rounded-lg`}>
+    <div className={`${quick.className} tracking-wider text-center md:px-24 xl:px-80 p-6 bg-white rounded-lg`}>
       <h1 className="text-3xl font-bold mb-4">Piece of information for your website</h1>
       <p className="mb-6">
       With just one piece of information, our developers will handle the rest. Save time and let us create a stunning website for you. </p>
