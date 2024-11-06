@@ -3,7 +3,7 @@ import NavLink from "../NavLink"
 import ctaImage from "../../../public/cta-image.jpg"
 import Image from "next/image"
 import { Quicksand} from '@next/font/google'
- 
+
 const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 
 
