@@ -1,6 +1,6 @@
 import SectionWrapper from "../../SectionWrapper"
 import NavLink from "../NavLink"
-import { Quicksand} from 'next/font/google'
+import { Quicksand} from '@next/font/google'
  
 const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 

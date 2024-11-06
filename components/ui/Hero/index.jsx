@@ -23,7 +23,7 @@ const Hero = () => (
 
           <h1
             class= {`${major.className} tracking-wide relative top-0 w-fit h-auto justify-center flex items-center 
-            bg-gradient-to-r from-red-500 via-black to-sky-800  bg-clip-text text-6xl sm:text-6xl lg:text-9xl font-semibold text-transparent text-center  whitespace-nowrap overflow-visible`}
+            bg-gradient-to-r from-red-500 via-black to-sky-800  bg-clip-text text-4xl sm:text-6xl lg:text-9xl font-semibold text-transparent text-center  whitespace-nowrap overflow-visible`}
           >
             Make website simple
           </h1>
