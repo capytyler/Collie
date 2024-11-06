@@ -23,13 +23,13 @@ export default function Home() {
       </Head>
       <Hero />
 
-      <GradientWrapper>
+      
         <Features />
         <CTA />
-      </GradientWrapper>
+   
       <ToolKit />
       <Flow />
-      <Com />
+   
       <Sample />
       <FooterCTA />
       <Info />
