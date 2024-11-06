@@ -25,7 +25,7 @@ className={quick.className}
     <div className="flex  tracking-wider gap-6 px-10 flex-col sm:flex-row sm:justify-between">
       {items.map((item, index) => (
         <div key={index} className="flex flex-col items-center mb-4 sm:mb-0 sm:w-1/2 relative group">
-          <div className="relative w-[550px]">
+          <div className="relative w-[350px] md:w-[550px]">
             <Image
               width={40}
               height={40}
