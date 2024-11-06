@@ -1,4 +1,15 @@
 import SectionWrapper from "../../SectionWrapper"
+import { Quicksand} from '@next/font/google'
+ 
+// If loading a variable font, you don't need to specify the font weight
+
+
+
+// If loading a variable font, you don't need to specify the font weight
+
+const quick = Quicksand({ subsets: ['latin'], weight: '500',})
+
+
 
 const Features = () => {
 
@@ -31,8 +42,8 @@ const Features = () => {
 
     return (
         <SectionWrapper>
-            <div id="features" className="custom-screen text-gray-600">
-                <ul className="grid gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div id="features" className={`${quick.className} custom-screen text-gray-600`}>
+                <ul className="grid tracking-wide gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
                     {
                         features.map((item, idx) => (
                             <li key={idx} className="space-y-3">

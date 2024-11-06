@@ -4,27 +4,35 @@ import CTA from "../components/ui/CTA";
 import Features from "../components/ui/Features";
 import FooterCTA from "../components/ui/FooterCTA";
 import Hero from "../components/ui/Hero";
-import LogoGrid from "../components/ui/LogoGrid";
-import Testimonials from "../components/ui/Testimonials";
 import ToolKit from "../components/ui/ToolKit";
+import Com from "../components/ui/Com";
+import Info from "../components/ui/Info";
+import Sample from "../components/ui/Sample";
+import Flow from "../components/ui/Flow";
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3 }}
+    >
       <Head>
-        <meta name='robots' content='index' />
+        <meta name='Hello' content='index' />
       </Head>
       <Hero />
-      <LogoGrid />
+
       <GradientWrapper>
         <Features />
         <CTA />
       </GradientWrapper>
       <ToolKit />
-      <GradientWrapper>
-        <Testimonials />
-      </GradientWrapper>
+      <Flow />
+      <Com />
+      <Sample />
       <FooterCTA />
-    </>
+      <Info />
+    </motion.div>
   );
 }
