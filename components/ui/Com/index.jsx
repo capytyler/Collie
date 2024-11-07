@@ -54,7 +54,7 @@ const Com = () => {
     transition={{ duration: 2 }}
   >
     <h2 className="text-3xl pb-10 sm:pt-24 font-semibold sm:text-5xl text-center">Product Comparison</h2>
-    <table className="border border-slate-500 w-full rounded-lg overflow-hidden">
+    <table className=" w-full rounded-lg overflow-hidden">
       <thead>
         <tr className="bg-sky-200">
           {products.map((product, index) => (

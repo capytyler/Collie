@@ -56,7 +56,7 @@ const ToolKit = () => {
         <SectionWrapper>
  <motion.div
       id="toolkit"
-      className={`${quick.className} tracking-wider max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8`}
+      className={`${quick.className} tracking-wide max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8`}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -88,7 +88,7 @@ const ToolKit = () => {
                 <h4 className="sm:text-2xl text-gray-900 font-semibold">
                   {item.title}
                 </h4>
-                <p className="sm:text-xl font-semibold mt-3">{item.desc}</p>
+                <p className="sm:text-md sm:font-semibold mt-3">{item.desc}</p>
               </div>
             </motion.li>
           ))}

@@ -34,7 +34,7 @@ const CTA = () => {
                     transition={{ duration: 2, ease: "easeOut", delay: 0.4 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-gray-800 mb-6 text-3xl  font-semibold sm:text-4xl">
+                    <h2 className="text-gray-800 tracking-wide mb-6 text-3xl  font-semibold sm:text-4xl">
                         The simplest way to create a website
                     </h2>
                     <p className="mt-3 text-gray-600">
