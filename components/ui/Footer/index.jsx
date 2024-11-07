@@ -1,6 +1,9 @@
 import { Quicksand} from '@next/font/google'
 import { motion } from 'framer-motion';
 // If loading a variable font, you don't need to specify the font weight
+import collie from "../../../public/collie2.png";
+import Image from 'next/image';
+
 const quick = Quicksand({ subsets: ['latin'], weight: '300',})
 
 
@@ -25,7 +28,12 @@ const Footer = () => (
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Collie
+         <Image
+          src={collie}
+          width={200}
+          height={50}
+          alt="Blinder logo"
+        />
       </motion.div>
       </div>
     </div>

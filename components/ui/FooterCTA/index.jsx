@@ -20,7 +20,7 @@ const fadeInVariants = {
   
   const FooterCTA = () => (
     <SectionWrapper>
-      <div id="contact" className="pt-20 custom-screen">
+      <div id="contact" className={ `${quick.className} pt-20 custom-screen`}>
         <motion.div
           className="max-w-2xl mx-auto text-center"
           initial="hidden"
