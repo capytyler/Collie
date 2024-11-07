@@ -3,9 +3,22 @@ import { motion } from 'framer-motion';
 import { Quicksand} from '@next/font/google'
  
 // If loading a variable font, you don't need to specify the font weight
-const quick = Quicksand({ subsets: ['latin'], weight: '400',})
+const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 
 
+const fadeInUpVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.3, // Delay each div by 0.3s multiplied by its index
+      type: 'spring',
+      stiffness: 100,
+      duration: 2,
+    },
+  }),
+};
 
 
 const Flow = () => {
@@ -60,15 +73,22 @@ const Flow = () => {
     },
   ];
 
+
+
   return (
-<div id='workflow' className={`${quick.className} tracking-wide pt-28 pb-10`}>
-    <h1  className='text-center font-bold text-5xl'> How we work</h1>
-    <div className={` flex flex-col items-center p-4 space-y-8`} >
-      {steps.map((step) => (
+    <div id='workflow' className={`${quick.className} tracking-wide sm:pt-24 pb-10`}>
+    <h1 className='text-center pb-8 text-3xl font-semibold sm:text-5xl'>How we work</h1>
+    <div className={`flex flex-col items-center p-4 space-y-8`}>
+      {steps.map((step, index) => (
         <motion.div
           key={step.number}
           className={`${step.bgColor} ${step.borderColor} border-4 border-opacity-100 rounded-lg p-4 shadow-md w-full max-w-5xl`}
           whileHover={{ scale: 1.05 }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }} // Adjust the amount as needed
+          custom={index}
+          variants={fadeInUpVariants}
         >
           <h3 className="font-extrabold pb-2 text-lg flex items-center">
             <motion.span
@@ -84,7 +104,7 @@ const Flow = () => {
         </motion.div>
       ))}
     </div>
-</div>
+  </div>
   );
 };
 

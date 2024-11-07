@@ -1,6 +1,6 @@
 import React from 'react';
 import { Quicksand} from '@next/font/google'
- 
+ import { motion } from 'framer-motion';
 // If loading a variable font, you don't need to specify the font weight
 const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 
@@ -47,37 +47,44 @@ const titles = [
 
 const Com = () => {
   return (
-<div className={`${quick.className}  sm:tracking-wider text-xs px-2 my-8 xl:px-56`}>
-  <h2 className="text-4xl font-bold mb-4 text-center">Product Comparison</h2>
-  <table className="border border-slate-500 w-full rounded-lg overflow-hidden">
-  <thead>
-    <tr className="bg-sky-200">
-      {products.map((product, index) => (
-        <th key={index} className="px-2 py-1 text-sm text-center text-gray-800 sm:px-6 sm:py-4 sm:text-lg">
-          {product.name}
-        </th>
-      ))}
-    </tr>
-  </thead>
-  <tbody>
-    {titles.map((title, index) => (
-      <React.Fragment key={index}>
-        <tr>
-          <td colSpan={products.length} className=" border-gray-500 px-2 py-1 text-sm text-center font-bold bg-sky-100 text-gray-800 sm:px-6 sm:py-4 sm:text-lg">
-            {title.title}
-          </td>
-        </tr>
-        <tr className="bg-sky-50">
-          {products.map((product, productIndex) => (
-            <td key={productIndex} title={title.title} className=" px-2 py-1 text-sm text-center text-gray-800 sm:px-6 sm:py-4 sm:text-lg">
-              {product[title.key]}
-            </td>
+<div className={`${quick.className} sm:tracking-wider text-xs px-2 my-8 xl:px-56`}>
+  <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 2 }}
+  >
+    <h2 className="text-3xl pb-10 sm:pt-24 font-semibold sm:text-5xl text-center">Product Comparison</h2>
+    <table className="border border-slate-500 w-full rounded-lg overflow-hidden">
+      <thead>
+        <tr className="bg-sky-200">
+          {products.map((product, index) => (
+            <th key={index} className="px-2 py-1 text-sm text-center text-gray-800 sm:px-6 sm:py-4  sm:text-xl">
+              {product.name}
+            </th>
           ))}
         </tr>
-      </React.Fragment>
-    ))}
-  </tbody>
-</table>
+      </thead>
+      <tbody>
+        {titles.map((title, index) => (
+          <React.Fragment key={index}>
+            <tr>
+              <td colSpan={products.length} className="border-gray-500 px-2 py-1 text-sm text-center bg-sky-100 text-gray-800 sm:px-6 sm:py-2 font-extrabold sm:text-lg">
+                {title.title}
+              </td>
+            </tr>
+            <tr className="bg-sky-50">
+              {products.map((product, productIndex) => (
+                <td key={productIndex} title={title.title} className="px-2 py-1 text-sm text-center text-gray-800 sm:px-6 sm:py-4 sm:text-lg">
+                  {product[title.key]}
+                </td>
+              ))}
+            </tr>
+          </React.Fragment>
+        ))}
+      </tbody>
+    </table>
+    <span className='text-xs sm:text-sm text-gray-500'>*Server hosting fee is free for first three years. Collie will strive to provide free hosting services after three years.</span>
+  </motion.div>
 </div>
   );
 };

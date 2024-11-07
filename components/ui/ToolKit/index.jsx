@@ -20,7 +20,7 @@ const fadeIn = {
 };
 
 // If loading a variable font, you don't need to specify the font weight
-const quick = Quicksand({ subsets: ['latin'], weight: '400',})
+const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 
 
 
@@ -60,11 +60,11 @@ const ToolKit = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       variants={fadeIn}
     >
       <div className="max-w-2xl mx-auto space-y-3 sm:text-center">
-        <h2 className="text-gray-800 text-4xl font-semibold sm:text-5xl">
+        <h2 className="text-gray-800 text-3xl  font-semibold sm:text-5xl">
           Work with the best toolkit
         </h2>
         <p>These are a few of our favourite things</p>
@@ -78,17 +78,17 @@ const ToolKit = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 2, delay: idx }}
+              transition={{ duration: 1, delay: idx }}
               variants={fadeIn}
             >
               <div className="flex-none w-12 h-12 gradient-border rounded-full flex items-center justify-center">
                 <Image src={item.icon} alt={item.title} />
               </div>
               <div>
-                <h4 className="text-2xl text-gray-900 font-semibold">
+                <h4 className="sm:text-2xl text-gray-900 font-semibold">
                   {item.title}
                 </h4>
-                <p className="text-xl font-semibold mt-3">{item.desc}</p>
+                <p className="sm:text-xl font-semibold mt-3">{item.desc}</p>
               </div>
             </motion.li>
           ))}
