@@ -1,6 +1,6 @@
 import SectionWrapper from "../../SectionWrapper"
 import { Quicksand} from '@next/font/google'
- 
+import { motion } from "framer-motion";
 // If loading a variable font, you don't need to specify the font weight
 
 
@@ -43,23 +43,27 @@ const Features = () => {
     return (
         <SectionWrapper>
             <div id="features" className={`${quick.className} custom-screen text-gray-600`}>
-                <ul className="grid tracking-wide gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-                    {
-                        features.map((item, idx) => (
-                            <li key={idx} className="space-y-3">
-                                <div className="w-12 h-12 border text-indigo-600 rounded-full flex items-center justify-center">
-                                    {item.icon}
-                                </div>
-                                <h4 className="text-lg text-gray-800 font-semibold">
-                                    {item.title}
-                                </h4>
-                                <p>
-                                    {item.desc}
-                                </p>
-                            </li>
-                        ))
-                    }
-                </ul>
+            <ul className="grid tracking-wide gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+    {features.map((item, idx) => (
+        <motion.li
+            key={idx}
+            className="space-y-3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: idx, duration: 1 }}
+        >
+            <div className="w-12 h-12 border text-indigo-600 rounded-full flex items-center justify-center">
+                {item.icon}
+            </div>
+            <h4 className="text-lg text-gray-800 font-semibold">
+                {item.title}
+            </h4>
+            <p>
+                {item.desc}
+            </p>
+        </motion.li>
+    ))}
+</ul>
             </div>
         </SectionWrapper>
     )

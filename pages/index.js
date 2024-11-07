@@ -16,7 +16,7 @@ export default function Home() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 3 }}
+      transition={{ duration: 4 }}
     >
       <Head>
         <meta name='Hello' content='index' />
@@ -31,6 +31,7 @@ export default function Home() {
       <Flow />
    
       <Sample />
+      <Com/>
       <FooterCTA />
       <Info />
     </motion.div>

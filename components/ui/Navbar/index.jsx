@@ -47,7 +47,7 @@ const Navbar = () => {
   >
     <header>
       <nav
-        className={` bg-slate-200 fixed z-20  w-full  md:text-sm ${
+        className={` bg-sky-100 fixed z-20  w-full  md:text-sm ${
           state ? "fixed z-10 h-full" : ""
         }`}
       >
