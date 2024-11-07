@@ -37,7 +37,7 @@ const CTA = () => {
                     <h2 className="text-gray-800 tracking-wide mb-6 text-3xl  font-semibold sm:text-4xl">
                         The simplest way to create a website
                     </h2>
-                    <p className="mt-3 text-gray-600">
+                    <p className="mt-3 text-md text-gray-600">
                         Collie is a group of website development enthusiasts based in Hong Kong. We are dedicated to providing affordable and straightforward solutions for creating websites that promote our clients' organizations and ideas. Our customers can feel at ease and confident when choosing our services. With our expertise, we ensure a seamless experience from start to finish
                     </p>
                     <NavLink

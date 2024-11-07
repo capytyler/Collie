@@ -88,7 +88,7 @@ const ToolKit = () => {
                 <h4 className="sm:text-2xl text-gray-900 font-semibold">
                   {item.title}
                 </h4>
-                <p className="sm:text-md sm:font-semibold mt-3">{item.desc}</p>
+                <p className=" text-md sm:text-md sm:font-semibold mt-3">{item.desc}</p>
               </div>
             </motion.li>
           ))}
