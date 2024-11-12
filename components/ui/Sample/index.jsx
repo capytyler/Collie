@@ -24,7 +24,7 @@ const fadeInVariants = {
 
 const Sample = () => {
   const items = [
-    { title: "Personal", imgSrc: personal, link: "https://collieweb.github.io/Julia3/gallery.html" },
+    { title: "Personal", imgSrc: personal, link: "https://collieweb.github.io/Julia3/index.html" },
     { title: "Organisation", imgSrc: med, link: "https://www.homed.health/" },
   ];
 
