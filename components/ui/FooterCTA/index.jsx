@@ -58,7 +58,7 @@ const fadeInVariants = {
           viewport={{ once: true }}
           variants={fadeInVariants}
         >
-          <Link className="text-3xl lg:text-5xl" href="mailto:colliewebdev@gmail.com"> colliewebdev@gmail.com </Link>
+          <Link className="text-xl lg:text-5xl" href="mailto:colliewebdev@gmail.com"> colliewebdev@gmail.com </Link>
        
           </motion.div>
        
