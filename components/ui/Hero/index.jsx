@@ -36,7 +36,7 @@ const Hero = () => (
         <div className="flex items-center justify-center md:justify-start gap-x-3 font-medium text-sm">
           <NavLink
             href="#contact"
-            className={`${quick.className} tracking-wider text-white bg-blue-600 hover:bg-blue-500 active:bg-gray-900 px-4 py-2 rounded`}
+            className={`${quick.className} tracking-wider border-2 border-blue-600 text-white bg-blue-600 hover:bg-blue-500 active:bg-gray-900 px-4 py-2 rounded`}
           >
             Start building
           </NavLink>

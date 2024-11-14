@@ -12,7 +12,7 @@ const CTA = () => {
         <SectionWrapper id="about" className="pb-0">
         <div className={`${quick.className} tracking-wide custom-screen`}>
             <motion.div
-                className="items-center mt-10 gap-x-12 lg:flex"
+                className="items-center md:mt-10 gap-x-12 lg:flex"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2, ease: "easeOut" }}
@@ -34,11 +34,11 @@ const CTA = () => {
                     transition={{ duration: 2, ease: "easeOut", delay: 0.4 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-gray-800 tracking-wide mb-6 text-3xl  font-semibold sm:text-4xl">
+                    <h2 className="text-gray-800 tracking-wide mb-6  text-3xl  font-semibold sm:text-4xl">
                         The simplest way to create a website
                     </h2>
-                    <p className="mt-3 text-md text-gray-600">
-                        Collie is a group of website development enthusiasts based in Hong Kong. We are dedicated to providing affordable and straightforward solutions for creating websites that promote our clients' organizations and ideas. Our customers can feel at ease and confident when choosing our services. With our expertise, we ensure a seamless experience from start to finish
+                    <p className="mt-3 text-md  text-gray-600">
+                        Collie is a group of website development enthusiasts based in Hong Kong. We are dedicated to providing affordable and straightforward solutions for creating websites that promote our clients' organizations and ideas. Our customers can feel at ease and confident when choosing our services. With our expertise, we ensure a seamless experience from start to finish.
                     </p>
                     <NavLink
                         href="#contact"

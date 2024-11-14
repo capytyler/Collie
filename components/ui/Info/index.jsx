@@ -10,7 +10,7 @@ const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 const Info = () => {
   return (
     <motion.div 
-      className={`${quick.className} tracking-wider text-center md:px-24 xl:px-80 bg-white rounded-lg`}
+      className={`${quick.className} tracking-wider text-center px-4 md:px-24 xl:px-80 bg-white rounded-lg`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2 }}
