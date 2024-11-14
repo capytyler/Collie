@@ -78,7 +78,7 @@ const ToolKit = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: idx }}
+              transition={{ duration: 1, delay: idx-0.7*idx }}
               variants={fadeIn}
             >
               <div className="flex-none w-12 h-12 gradient-border rounded-full flex items-center justify-center">
