@@ -49,7 +49,7 @@ const Sample = () => {
           variants={fadeInVariants}
         >
           <Link href={item.link}>
-            <div className="w-[300px] sm:w-[450px]">
+            <div className="w-[300px] lg:w-[450px]">
               <Image
                 width={40}
                 height={40}
