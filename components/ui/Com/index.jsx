@@ -8,7 +8,7 @@ const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 
 const products = [
   {
-    name: '1Our Service',
+    name: 'Our Service',
     price: 'Leave the time-consuming design process to us',
     feature1: 'Get your logo designed for free with our service!',
     feature2: 'No subscription or maintenance fee',
