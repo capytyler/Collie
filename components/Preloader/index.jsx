@@ -4,8 +4,16 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 
-const words = ["Hello", "Bonjour", "Ciao", "Olà", "やあ", "Hallå", "Guten tag", "Hallo"]
-
+const words = [
+    "Web design",
+    "SEO optimize",
+    "Typography",
+    "Color Palette",
+    "Wireframe",
+    
+    "Interface",
+    "User Experience"
+];
 export default function Index() {
     const [index, setIndex] = useState(0);
     const [dimension, setDimension] = useState({width: 0, height:0});
