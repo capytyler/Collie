@@ -8,10 +8,9 @@ const words = [
     "Web design",
     "SEO optimize",
     "Typography",
-    "Color Palette",
+    "Color Harmony",
     "Wireframe",
-    
-    "Interface",
+    "User Interface",
     "User Experience"
 ];
 export default function Index() {
