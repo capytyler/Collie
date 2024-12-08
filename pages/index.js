@@ -9,6 +9,7 @@ import Com from "../components/ui/Com";
 import Info from "../components/ui/Info";
 import Sample from "../components/ui/Sample";
 import Flow from "../components/ui/Flow";
+import Cardreal from "../components/Cardreal";
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
@@ -57,8 +58,8 @@ export default function Home() {
    
       <ToolKit />
       <Flow />
+   <Cardreal/>
    
-      <Sample />
       <Com/>
       <FooterCTA />
       <Info />
