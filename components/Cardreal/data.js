@@ -1,8 +1,12 @@
+import lab from '../../public/lab.gif'
+
+
+
 export const projects = [
   {
     title: "Organisation (Laboratory)",
     description: "The Cheng Lab website is a neuroscience laboratory website. It provides background information about the laboratory and explains their work.",
-    src: '../../public/lab.gif',
+    src: '../../public/med.gif',
     link: "https://chenglab.vercel.app/",
     color: "#BBACAF"
   },

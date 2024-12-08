@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './style.module.scss';
 import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
+import lab from  '../../public/med.gif'
 
 const Card = ({i, title, description, src, link, color, progress, range, targetScale}) => {
 
@@ -41,7 +42,7 @@ const Card = ({i, title, description, src, link, color, progress, range, targetS
             >
             <a href={link} target="_blank">   <Image
                 fill
-                src={`/images/${src}`}
+                src={src}
                 alt="image" 
               /></a>
             </motion.div>

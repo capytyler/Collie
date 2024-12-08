@@ -1,11 +1,38 @@
 'use client';
-import { projects } from './data';
+
 import Card from '../../components/Card';
 import { useScroll } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import Lenis from 'lenis';
+import lab from '../../public/lab.gif'
+import personal from '../../public/personal.gif'
+import med from '../../public/med.gif'
 
 
+const projects = [
+    {
+      title: "Organisation (Laboratory)",
+      description: "The Cheng Lab website is a neuroscience laboratory website.",
+      src: lab,
+      link: "https://chenglab.vercel.app/",
+      color: "#BBACAF"
+    },
+    {
+      title: "Organisation (Medical Center)",
+      description: "This is a website for medical center in Vietnam.",
+      src: med,
+      link: "https://https://www.homed.health/",
+      color: "#977F6D"
+    },
+    {
+      title: "Personal Website",
+      description: "A personal website of Julia Chan",
+      src: personal,
+      link: "https://collieweb.github.io/Julia3/index.html",
+      color: "#C2491D"
+    },
+  
+  ]
 
 
 export default function Cardreal() {
