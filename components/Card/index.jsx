@@ -21,6 +21,7 @@ const Card = ({i, title, description, src, link, color, progress, range, targetS
 
       <motion.div 
         style={{backgroundColor: color, scale, top:`calc(-5vh + ${i * 25}px)`}} 
+      
         className={styles.card}
       >
         <h2>{title}</h2>
