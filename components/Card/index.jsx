@@ -5,7 +5,7 @@ import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import lab from  '../../public/med.gif'
 
-const Card = ({i, title, description, src, link, color, progress, range, targetScale}) => {
+const Card = ({i, title,subtitle, description, src, link, color, progress, range, targetScale}) => {
 
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -25,9 +25,11 @@ const Card = ({i, title, description, src, link, color, progress, range, targetS
         className={styles.card}
       >
         <h2>{title}</h2>
+        <h3 class="text-center text-sm">{subtitle}</h3>
         <div className={styles.body}>
           <div className={styles.description}>
             <p>{description}</p>
+       
             <span>
               <a href={link} target="_blank">See more</a>
               <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,6 +51,9 @@ const Card = ({i, title, description, src, link, color, progress, range, targetS
             </motion.div>
           </div>
 
+        </div>
+        <div class=' mt-3 text-center'>
+        ↓ keep scrolling for more! ↓ 
         </div>
       </motion.div>
     </div>

@@ -11,14 +11,16 @@ import med from '../../public/med.gif'
 
 const projects = [
     {
-      title: "Organisation (Laboratory)",
+      title: "Organisation ",
+      subtitle:'Laboratory',
       description: "Neuroscience is fascinating, but you might think this laboratory website is spectacular. People come, people go - no worries! The boss can easily edit the member list of the website.",
       src: lab,
       link: "https://chenglab.vercel.app/",
       color: "#BBACAF"
     },
     {
-      title: "Organisation (Medical Center)",
+      title: "Organisation ",
+      subtitle:'Medical Center',
       description: "Wanna see a doctor in Vietnam? Go to Ho's Medical Center. They provide all-around intensive care to the patients. Visit this website for more.",
       src: med,
       link: "https://https://www.homed.health/",
@@ -26,6 +28,7 @@ const projects = [
     },
     {
       title: "Personal Website",
+      subtitle:'',
       description: "As an elite in the public relations industry, a fancy personal website is inevitable. Julia Chan is smart and capable; after visiting her website, you might just find yourself her biggest fan.",
       src: personal,
       link: "https://collieweb.github.io/Julia3/index.html",
