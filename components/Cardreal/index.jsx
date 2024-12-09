@@ -23,7 +23,7 @@ const projects = [
       subtitle:'Medical Center',
       description: "Wanna see a doctor in Vietnam? Go to Ho's Medical Center. They provide all-around intensive care to the patients. Visit this website for more.",
       src: med,
-      link: "https://https://www.homed.health/",
+      link: "https://www.homed.health/",
       color: "#977F6D"
     },
     {
