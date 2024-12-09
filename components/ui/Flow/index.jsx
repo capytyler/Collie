@@ -12,7 +12,7 @@ const fadeInUpVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.3, // Delay each div by 0.3s multiplied by its index
+      delay: i * 0.1, // Delay each div by 0.3s multiplied by its index
       type: 'spring',
       stiffness: 100,
       duration: 2,

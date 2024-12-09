@@ -4,6 +4,12 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 
+const iceland = Iceland({ subsets: ['latin'], weight: '400',})
+import { Iceland} from '@next/font/google'
+
+
+
+
 const words = [
     "Web design",
     "SEO optimize",
@@ -46,7 +52,7 @@ export default function Index() {
         <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
             {dimension.width > 0 && 
             <>
-                <motion.p variants={opacity} initial="initial" animate="enter"><span></span>{words[index]}</motion.p>
+                <motion.p variants={opacity} initial="initial" className={`${iceland.className}`} animate="enter"><span></span>{words[index]}</motion.p>
                 <svg>
                     <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
                 </svg>
