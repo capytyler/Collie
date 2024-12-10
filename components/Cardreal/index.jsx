@@ -7,6 +7,8 @@ import Lenis from 'lenis';
 import lab from '../../public/lab.gif'
 import personal from '../../public/personal.gif'
 import med from '../../public/med.gif'
+import { Quicksand} from '@next/font/google'
+const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 
 
 const projects = [
@@ -58,7 +60,7 @@ export default function Cardreal() {
 
   return (
 
-    <div  id='sample'>
+    <div className={`${quick.className}`} id='sample'>
 
       <main  ref={container} >
       <h1 className="text-3xl  sm:pt-24  font-semibold sm:text-5xl tracking-wider   text-center ">
