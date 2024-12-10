@@ -58,7 +58,7 @@ export default function Cardreal() {
 
   return (
 
-    <div>
+    <div  id='sample'>
 
       <main  ref={container} >
       <h1 className="text-3xl  sm:pt-24  font-semibold sm:text-5xl tracking-wider   text-center ">
