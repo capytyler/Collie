@@ -6,6 +6,7 @@ import { useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 import lab from '../../public/lab.gif'
 import personal from '../../public/personal.gif'
+import gym from '../../public/gym.gif'
 import med from '../../public/med.gif'
 import { Quicksand} from '@next/font/google'
 const quick = Quicksand({ subsets: ['latin'], weight: '500',})
@@ -13,7 +14,7 @@ const quick = Quicksand({ subsets: ['latin'], weight: '500',})
 
 const projects = [
     {
-      title: "Organisation ",
+      title: "Organisation",
       subtitle:'Laboratory',
       description: "Neuroscience is fascinating, but you might think this laboratory website is spectacular. People come, people go - no worries! The boss can easily edit the member list of the website.",
       src: lab,
@@ -21,12 +22,20 @@ const projects = [
       color: "#BBACAF"
     },
     {
-      title: "Organisation ",
+      title: "Organisation",
       subtitle:'Medical Center',
       description: "Wanna see a doctor in Vietnam? Go to Ho's Medical Center. They provide all-around intensive care to the patients. Visit this website for more.",
       src: med,
       link: "https://www.homed.health/",
       color: "#977F6D"
+    },
+    {
+      title: "Organisation",
+      subtitle:'Fitness center',
+      description: "Monster Fitness is a modern fitness center offering multiple sports training programs. Click to experience the vibrant world of sports!",
+      src: gym,
+      link: "https://collieweb.github.io/Julia3/index.html",
+      color: "#87CEEB"
     },
     {
       title: "Personal Website",
@@ -36,6 +45,7 @@ const projects = [
       link: "https://collieweb.github.io/Julia3/index.html",
       color: "#C2491D"
     },
+   
   
   ]
 
