@@ -34,7 +34,7 @@ const projects = [
       subtitle:'Fitness center',
       description: "Monster Fitness is a modern fitness center offering multiple sports training programs. Click to experience the vibrant world of sports!",
       src: gym,
-      link: "https://collieweb.github.io/Julia3/index.html",
+      link: "https://monster-fitness.vercel.app/",
       color: "#87CEEB"
     },
     {
