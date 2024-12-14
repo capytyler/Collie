@@ -7,8 +7,8 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVDBCM3NQF"></script>
-<script id='google-analytics'>
+<Script async src="https://www.googletagmanager.com/gtag/js?id=G-BVDBCM3NQF"></Script>
+<Script id='google-analytics'>
 
     {`  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
 
   gtag('config', 'G-BVDBCM3NQF');`}
 
-</script>
+</Script>
                 <title>Collie</title>
                 <meta name='description' content='Collie: Simplifying Your Journey to Build and Grow Your Website ' />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
