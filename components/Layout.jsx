@@ -1,11 +1,22 @@
 import Head from "next/head"
 import Footer from "./ui/Footer"
 import Navbar from "./ui/Navbar"
+import Script from "next/script"
 
 const Layout = ({ children }) => {
     return (
         <>
             <Head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVDBCM3NQF"></script>
+<script id='google-analytics'>
+
+    {`  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BVDBCM3NQF');`}
+
+</script>
                 <title>Collie</title>
                 <meta name='description' content='Collie: Simplifying Your Journey to Build and Grow Your Website ' />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
